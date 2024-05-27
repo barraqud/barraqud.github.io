@@ -23,7 +23,6 @@ jobs:
         env:
           BASE_PATH: '/${{ github.event.repository.name }}'
         run: bun install --frozen-lockfile
-      - run: bun index.ts
       - name: Build project
         run: bun run build
 
